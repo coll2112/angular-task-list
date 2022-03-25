@@ -1,0 +1,16 @@
+<div
+  *ngIf="task"
+  [ngClass]="!task.isCompleted ? 'task-item' : 'task-item task-item-completed'"
+>
+  <h4>{{ task.id }}.</h4>
+  <div>
+    <h4>{{ task.title }}</h4>
+    <p>{{ !task.description ? "N/A" : task.description }}</p>
+  </div>
+  <span (click)="onXClick()" class="faIcon faIcon-first"
+    ><fa-icon [icon]="XIcon" size="lg"></fa-icon
+  ></span>
+  <span class="faIcon" (click)="onCheckClick()">
+    <fa-icon [icon]="checkIcon" size="lg"></fa-icon>
+  </span>
+</div>

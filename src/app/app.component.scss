@@ -1,0 +1,19 @@
+.app-container {
+  margin-top: 2rem !important;
+
+  & > h1 {
+    text-align: center;
+  }
+
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  background-color: rgb(206, 76, 62);
+  height: 3px;
+  margin: 1rem 0 1.5rem;
+  width: 100%;
+}

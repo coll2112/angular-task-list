@@ -1,0 +1,32 @@
+<div class="tasks-header">
+  <h2>Current Tasks</h2>
+
+  <div>
+    <div class="taskInput">
+      <button
+        (click)="isAddingTask ? addTask() : onClick()"
+        [disabled]="isAddingTask ? (taskTitle ? false : true) : false"
+      >
+        {{ !isAddingTask ? "Add Task" : "Submit" }}
+      </button>
+      <input
+        *ngIf="isAddingTask"
+        [(ngModel)]="taskTitle"
+        placeholder="Title..."
+      />
+    </div>
+    <input
+      class="description"
+      *ngIf="isAddingTask"
+      [(ngModel)]="taskDescription"
+      placeholder="Description..."
+    />
+  </div>
+</div>
+
+<app-task-item
+  *ngFor="let task of tasks"
+  [task]="task"
+  (deleteTaskClick)="deleteTask(task)"
+  (completeTaskClick)="completeTask(task)"
+></app-task-item>

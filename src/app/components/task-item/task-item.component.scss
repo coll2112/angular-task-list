@@ -1,0 +1,41 @@
+.task-item {
+  display: flex;
+  margin: 1rem 0;
+  background: rgb(206, 76, 62);
+  color: whitesmoke;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+
+  &-completed {
+    background: rgb(45, 138, 22);
+  }
+
+  & > h4 {
+    margin-right: 1rem;
+  }
+
+  & > div {
+    width: 100%;
+
+    & > h4 {
+      font-size: 18px;
+    }
+
+    & > p {
+      font-size: 12px;
+      padding-right: 2rem;
+    }
+  }
+
+  .faIcon {
+    margin: auto;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &-first {
+      margin-right: 0.3rem;
+    }
+  }
+}
