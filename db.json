@@ -4,13 +4,13 @@
       "id": 1,
       "title": "Clean House",
       "description": "Remember to do laundry too",
-      "isCompleted": false
+      "isCompleted": true
     },
     {
       "id": 2,
       "title": "Clean Garage",
       "description": "Blow out leaves",
-      "isCompleted": false
+      "isCompleted": true
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "id": 5,
       "title": "Hang Pictures",
       "description": "Hang picture frames received on Christmas",
-      "isCompleted": true
+      "isCompleted": false
     }
   ]
 }
